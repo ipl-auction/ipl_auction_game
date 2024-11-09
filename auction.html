@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Auction Game</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <div id="team-selection">
+        <h2>Select Your Team</h2>
+        <div id="team-buttons">
+            <!-- Buttons will be generated dynamically -->
+        </div>
+    </div>
+    
+    <div id="auction-section" style="display: none;">
+        <div id="player-info">
+            <h2>Auction for <span id="player-details"></span></h2>
+            <div id="player-image"></div>
+            
+            <div id="bid-logo"></div>
+        </div>
+        <button id="user-bid-btn" style="display: none;">Place Your Bid</button>
+        <button id="next-player-btn">Next Player</button>
+    </div>
+<div id="announcement" class="announcement"></div>
+<!-- Instructions Tab -->
+<div id="instructions-tab">
+    <button id="instructions-toggle" onclick="toggleInstructions()">Show Instructions</button>
+    <div id="instructions-content" style="display: none;">
+        <h3>Game Instructions</h3>
+        <p><strong>Objective:</strong> Manage an IPL team and bid for players to create the best squad within a set budget.</p>
+        
+        <h4>Squad Requirements</h4>
+        <ul>
+            <li>Minimum squad size: 18 players</li>
+            <li>Maximum squad size: 24 players</li>
+<li>Maximum Foreign size: 8 players</li>
+            <li>Roles needed per team:
+                <ul>
+                    <li>Batsmen (BAT): At least 7</li>
+                    <li>Bowlers (BOWL): At least 7</li>
+                    <li>Wicketkeepers (WK): At least 3</li>
+                    <li>All-rounders (AR): At least 5</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Bidding Rules</h4>
+        <ul>
+            <li>Each player has a base price, which is the starting bid.</li>
+            <li>The auction lasts for 30 seconds per player. If no bids are made within this time, the player remains unsold.</li>
+            <li>Click the "Bid" button to place a bid on a player. Each bid increases the price by ₹1 million.</li>
+            <li>Teams compete automatically against your bids. If another team bids higher, the player goes to that team.</li>
+            <li>If your team has the highest bid after 30 seconds, the player is sold to your team and the amount is deducted from your budget.</li>
+            <li>Unsold players will be marked in red, and sold players in green.</li>
+        </ul>
+
+        <h4>How to Play</h4>
+        <ol>
+            <li>Select your team and start the auction by clicking "Next Player".</li>
+            <li>Click "Bid" to place bids. Make sure you have enough budget for each bid.</li>
+            <li>Try to build a balanced squad that meets the squad requirements.</li>
+            <li>Once all players are auctioned, the game ends, and you can view your final team lineup.</li>
+        </ol>
+    </div>
+</div>
+<div id="team-tables"></div>
+<!-- Button to show players -->
+<button id="show-players-btn">Show Players</button>
+
+<!-- Div to hold the list of players -->
+<div id="players-list" style="display: none;"></div>
+
+<button id="clearAuctionBtn" class="clear-auction-button" onclick="clearAuctionData()">Clear Auction Data</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
