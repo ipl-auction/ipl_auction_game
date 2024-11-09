@@ -1,0 +1,360 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Team Selection Section */
+#team-selection {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Team Buttons */
+#team-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.team-button:hover {
+    background-color: #0056b3;
+}
+
+/* Auction Section */
+#auction-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+}
+
+#player-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#player-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#current-bid {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+/* User Bid Button */
+#user-bid-btn, #next-player-btn {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#user-bid-btn:hover, #next-player-btn:hover {
+    background-color: #218838;
+}
+
+/* Announcement Section */
+.announcement {
+    background-color: #ffeb3b;
+    color: #333;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Team Tables */
+#team-tables {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-table {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.team-table caption {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.team-table th, .team-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.team-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tfoot {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+/* Team Logo in Announcement */
+.team-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.clear-auction-button {
+    background-color: #e74c3c; /* Red background */
+    color: white;              /* White text */
+    border: none;              /* No border */
+    padding: 10px 20px;        /* Padding around the text */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 16px;           /* Font size */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+.clear-auction-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05);    /* Slightly enlarge on hover */
+}
+
+.clear-auction-button:focus {
+    outline: none;             /* Remove outline on focus */
+}
+
+#auction-players-list {
+    width: 300px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#auction-players-list h2 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#players-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#players-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+    color: #555;
+}
+
+#players-list li:last-child {
+    border-bottom: none;
+}
+
+#players-list li span.player-name {
+    font-weight: bold;
+    color: #333;
+}
+
+#players-list li span.player-price {
+    color: #007bff;
+    font-weight: bold;
+}
+
+#players-list li:hover {
+    background-color: #f0f0f0;
+}
+
+#instructions-tab {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#instructions-toggle {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#instructions-content {
+    margin-top: 10px;
+}
+#auction-players-tab {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.player-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.player-status {
+    font-weight: bold;
+}
+
+.available {
+    color: green;
+}
+
+.sold {
+    color: green;
+}
+
+.unsold {
+    color: red;
+}
+#players-list {
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hide players list by default */
+}
+
+/* Button to toggle visibility of the players list */
+#show-players-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#show-players-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for each player item in the list */
+.player-item {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-item:hover {
+    background-color: #f0f0f0;
+}
+
+.player-item button {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.player-item button:hover {
+    background-color: #218838;
+}
+
+/* Styles for the player status (Available/Sold) */
+.player-status {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.player-status.available {
+    color: green;
+}
+
+.player-status.sold {
+    color: red;
+    font-style: italic;
+}
+
+/* Make the player item responsive */
+@media screen and (max-width: 600px) {
+    .player-item {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .player-item button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+.team-logo {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
