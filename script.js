@@ -143,8 +143,7 @@ let teams = [
 let players = [
     { name: "Rishabh Pant", basePrice: 20000000, role: "Wicketkeeper", nationality: "Indian", image: "rishabh_pant.jpg" },
     { name: "KL Rahul", basePrice: 20000000, role: "Wicketkeeper", nationality: "Indian", image: "kl_rahul.jpg" },
-    { name: "Shreyas Iyer", basePrice: 20000000, role: "Batsman", nationality: "Indian", image: "shreyas_iyer.jpg" },
-{ name: "Cameron Green", basePrice: 15000000, role: "All-rounder", nationality: "Foreign", image: "cameron_green.jpg" },   
+    { name: "Shreyas Iyer", basePrice: 20000000, role: "Batsman", nationality: "Indian", image: "shreyas_iyer.jpg" },   
  { name: "Mohammad Shami", basePrice: 20000000, role: "Bowler", nationality: "Indian", image: "mohammad_shami.jpg" },
  { name: "Mitchell Starc", basePrice: 20000000, role: "Bowler", nationality: "Foreign", image: "mitchell_starc.jpg" },
 { name: "Glenn Maxwell", basePrice: 15000000, role: "All-rounder", nationality: "Foreign", image: "glenn_maxwell.jpg" },   
@@ -161,7 +160,6 @@ let players = [
     { name: "Jake Fraser-McGurk", basePrice: 5000000, role: "All-rounder", nationality: "Foreign", image: "jake_fraser_mcgurk.jpg" }, 
  { name: "Ashutosh Sharma", basePrice: 5000000, role: "All-rounder", nationality: "Indian", image: "ashutosh_sharma.jpg" },
 { name: "Will Jacks", basePrice: 10000000, role: "All-rounder", nationality: "Foreign", image: "will_jacks.jpg" },
-    { name: "Jofra Archer", basePrice: 20000000, role: "Bowler", nationality: "Foreign", image: "jofra_archer.jpg" },
     { name: "Khaleel Ahmed", basePrice: 20000000, role: "Bowler", nationality: "Indian", image: "khaleel_ahmed.jpg" },
     { name: "Mitchell Marsh", basePrice: 15000000, role: "All-rounder", nationality: "Foreign", image: "mitchell_marsh.jpg" },
     { name: "Deepak Chahar", basePrice: 20000000, role: "Bowler", nationality: "Indian", image: "deepak_chahar.jpg" },
